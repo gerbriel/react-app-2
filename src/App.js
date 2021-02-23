@@ -1,4 +1,4 @@
-//feature-1
+//product-list
 import React, {Component} from 'react'
 import './App.css';
 
