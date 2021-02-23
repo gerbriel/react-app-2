@@ -1,3 +1,11 @@
+body,
+input,
+select,
+textarea{
+  font-size: 1.6rem;
+
+}
+
 .App {
   text-align: center;
 }
@@ -6,7 +14,42 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+header{
+  grid-area: header;
+  background-color: #203040;
+  color:#ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem
+}
+header a{
+  color:#ffffff;
+  text-decoration: none;
+}
+a:hover{
+  color:aqua;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color:#ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
